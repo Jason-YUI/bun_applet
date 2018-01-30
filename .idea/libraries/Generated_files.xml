@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/dist/app.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/components/counter.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/components/group.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/components/groupitem.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/components/list.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/components/panel.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/mixins/test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/pages/index.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/dist/app.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/components/counter.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/components/group.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/components/groupitem.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/components/list.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/components/panel.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/mixins/test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/pages/index.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["panel.js"],"names":["Panel","component"],"mappings":";;;;;;;;;AACE;;;;;;;;;;;;;;;;;;;;;;;;;;IAEqB,A;;;;;;;;;;EAAc,eAAK,A;;kBAAnB,A","file":"panel.js","sourcesContent":["\r\n  import wepy from 'wepy'\r\n\r\n  export default class Panel extends wepy.component {\r\n  }\r\n"]}
