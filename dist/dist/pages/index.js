@@ -44,6 +44,10 @@ var _test = require('./../mixins/test.js');
 
 var _test2 = _interopRequireDefault(_test);
 
+var _child = require('./../components/child.js');
+
+var _child2 = _interopRequireDefault(_child);
+
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
@@ -116,7 +120,7 @@ var _initialiseProps = function _initialiseProps() {
     navigationBarTitleText: 'test'
   };
   this.$repeat = { "groupList": { "com": "group", "props": "grouplist" } };
-  this.$props = { "group": { "v-bind:grouplist.once": { "value": "item", "type": "item", "for": "groupList", "item": "item", "index": "index", "key": "key" }, "v-bind:indexa.once": { "value": "index", "type": "index", "for": "groupList", "item": "item", "index": "index", "key": "key" } }, "counter1": { "xmlns:v-on": "" }, "counter2": { "xmlns:v-bind": "", "v-bind:num.sync": "mynum" } };
+  this.$props = { "group": { "v-bind:grouplist.once": { "value": "item", "type": "item", "for": "groupList", "item": "item", "index": "index", "key": "key" }, "v-bind:indexa.once": { "value": "index", "type": "index", "for": "groupList", "item": "item", "index": "index", "key": "key" } }, "counter1": { "xmlns:v-on": "" }, "counter2": { "xmlns:v-bind": "", "v-bind:num.sync": "mynum" }, "child": { "v-bind:title.once": "parentTitle", "v-bind:syncTitle.sync": "parentTitle", "v-bind:twoWayTitle.once": "parentTitle" } };
   this.$events = { "counter1": { "v-on:index-emit": "counterEmit" } };
   this.components = {
     panel: _panel2.default,
@@ -124,7 +128,8 @@ var _initialiseProps = function _initialiseProps() {
     counter2: _counter2.default,
     list: _list2.default,
     group: _group2.default,
-    toast: _wepyComToast2.default
+    toast: _wepyComToast2.default,
+    child: _child2.default
   };
   this.mixins = [_test2.default];
   this.data = {
@@ -169,7 +174,8 @@ var _initialiseProps = function _initialiseProps() {
         childid: '3.1',
         childname: '子项，点我改变'
       }]
-    }]
+    }],
+    parentTitle: 'p-title'
   };
   this.computed = {
     now: function now() {

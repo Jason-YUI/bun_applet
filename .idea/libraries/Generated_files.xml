@@ -3,6 +3,8 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/dist/app.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/components/child.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/components/com.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/components/counter.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/components/group.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/components/groupitem.js" />
@@ -14,6 +16,8 @@
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/dist/app.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/components/child.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/components/com.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/components/counter.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/components/group.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/components/groupitem.js" />

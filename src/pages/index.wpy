@@ -74,6 +74,7 @@
     </panel>
 
     <toast />
+    <child :title="parentTitle" :syncTitle.sync="parentTitle" :twoWayTitle="parentTitle"></child>
   </view>
 </template>
 
@@ -85,6 +86,7 @@
   import Group from '../components/group'
   import Toast from 'wepy-com-toast'
   import testMixin from '../mixins/test'
+  import Child from '../components/child'
 
   export default class Index extends wepy.page {
     config = {
@@ -96,7 +98,8 @@
       counter2: Counter,
       list: List,
       group: Group,
-      toast: Toast
+      toast: Toast,
+      child: Child
     }
 
     mixins = [testMixin]
@@ -153,7 +156,8 @@
             }
           ]
         }
-      ]
+      ],
+      parentTitle: 'p-title'
     }
 
     computed = {

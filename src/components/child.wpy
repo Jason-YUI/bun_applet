@@ -1,0 +1,42 @@
+<template>
+  <view>Hello bun</view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Child extends wepy.component {
+      props = {
+        title: String,
+        syncTitle: {
+          type: String,
+          default: 'null'
+        },
+        twoWayTitle: {
+          type: Number,
+          default: 'nothing',
+          twoWay: true
+        }
+      };
+
+      onLoad() {
+        // console.log(this.title);
+        // console.log(this.syncTitle);
+        // console.log(this.twoWayTitle);
+        //
+        // this.title = 'c-title';
+        // console.log(this.$parent.parentTitle);
+        // this.twoWayTitle = 'two-way-title';
+        // this.$apply();
+        // console.log(this.$parent.parentTitle);
+        // this.$parent.parentTitle = 'p-title-changed';
+        // this.$parent.$apply();
+        // console.log(this.title);
+        // console.log(this.syncTitle);
+      }
+    }
+</script>
+
+<style type="less">
+
+</style>

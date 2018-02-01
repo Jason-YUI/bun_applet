@@ -1,3 +1,4 @@
+@import "./../components/child.wxss";
 @import "./../npm/wepy-com-toast/toast.wxss";
 @import "./../components/group.wxss";
 @import "./../components/list.wxss";
