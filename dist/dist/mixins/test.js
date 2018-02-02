@@ -57,12 +57,9 @@ var testMixin = function (_wepy$mixin) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = testMixin.__proto__ || Object.getPrototypeOf(testMixin)).call.apply(_ref, [this].concat(args))), _this), _this.data = {
-      mixin: 'This is mixin data.'
-    }, _this.methods = {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = testMixin.__proto__ || Object.getPrototypeOf(testMixin)).call.apply(_ref, [this].concat(args))), _this), _this.methods = {
       tap: function tap() {
-        this.mixin = 'mixin data was changed';
-        console.log('mixin method tap');
+        console.log('mix tap');
       }
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
@@ -70,12 +67,7 @@ var testMixin = function (_wepy$mixin) {
   _createClass(testMixin, [{
     key: 'onShow',
     value: function onShow() {
-      console.log('mixin onShow');
-    }
-  }, {
-    key: 'onLoad',
-    value: function onLoad() {
-      console.log('mixin onLoad');
+      console.log('mixin show');
     }
   }]);
 

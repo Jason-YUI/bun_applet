@@ -26,28 +26,6 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-function _asyncToGenerator(fn) {
-  return function () {
-    var gen = fn.apply(this, arguments);return new Promise(function (resolve, reject) {
-      function step(key, arg) {
-        try {
-          var info = gen[key](arg);var value = info.value;
-        } catch (error) {
-          reject(error);return;
-        }if (info.done) {
-          resolve(value);
-        } else {
-          return Promise.resolve(value).then(function (value) {
-            step("next", value);
-          }, function (err) {
-            step("throw", err);
-          });
-        }
-      }return step("next");
-    });
-  };
-}
-
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -70,11 +48,17 @@ var _default = function (_wepy$app) {
   _inherits(_default, _wepy$app);
 
   function _default() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, _default);
 
-    var _this = _possibleConstructorReturn(this, (_default.__proto__ || Object.getPrototypeOf(_default)).call(this));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-    _this.config = {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _default.__proto__ || Object.getPrototypeOf(_default)).call.apply(_ref, [this].concat(args))), _this), _this.config = {
       pages: ['pages/index'],
       window: {
         backgroundTextStyle: 'light',
@@ -82,61 +66,12 @@ var _default = function (_wepy$app) {
         navigationBarTitleText: 'WeChat',
         navigationBarTextStyle: 'black'
       }
-    };
-    _this.globalData = {
+    }, _this.globalData = {
       userInfo: null
-    };
-
-    _this.use('requestfix');
-    return _this;
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(_default, [{
-    key: 'onLaunch',
-    value: function onLaunch() {
-      this.testAsync();
-    }
-  }, {
-    key: 'sleep',
-    value: function sleep(s) {
-      return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-          resolve('promise resolved');
-        }, s * 1000);
-      });
-    }
-  }, {
-    key: 'testAsync',
-    value: function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var data;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return this.sleep(3);
-
-              case 2:
-                data = _context.sent;
-
-                console.log(data);
-
-              case 4:
-              case 'end':
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function testAsync() {
-        return _ref.apply(this, arguments);
-      }
-
-      return testAsync;
-    }()
-  }, {
     key: 'getUserInfo',
     value: function getUserInfo(cb) {
       var that = this;
